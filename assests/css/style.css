@@ -1,0 +1,12 @@
+body{
+    color: white;
+}
+.container{
+    width: 500px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.719);
+}
+.right-side{
+    width: 40%;
+    height: auto;
+}
