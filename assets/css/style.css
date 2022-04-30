@@ -2,20 +2,39 @@ body{
     color: white;
 }
 .container{
-    width: 500px;
-    height: 400px;
+    width: 600px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.719);
     margin: 0 auto;
+    display: inline-flex;
 }
 img{
+    
     width: 300px;
+    height: 500px;
+    margin-right: 0px;
+
+    
 
 }
+#logo-img{
+    width: 100px;
+    height: 100px;
+}
+.left-side{
+    
+    width:200px;
+    height: 500px;
+    margin-right: 30px;
+    padding: 12px;
+    align-items: center;
+}
+.left-side img{
+    float: right;
+}
 .right-side{
-    width: 40%;
-    height: 400px;
-    margin-left: 500px;
-    background-color: black;
+ width: 300px;
+ height: 500px;
 }
 input[type=text]{ 
     display: block;
