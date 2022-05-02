@@ -10,18 +10,24 @@
   <body>
     <div class="container">
       <div class="left-side">
+        <div class="logo">
+          <img id="logo-img" src="assets/images/logo.png" alt="Logo" />
+        </div>
         <form action="Post">
-          <!--
-          <img id="logo-img" src="assets/images/logo.png" alt="Logo" /> -->
           <span>Find the right boot camp for you</span>
           <label for="interest">Select your interest</label>
           <input type="text" id="interest" />
           <label for="fname">First name</label>
-          <input type="text" id="fname" />
+          <input
+            type="text"
+            id="fname"
+            required
+            placeholder="your first name"
+          />
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" />
+          <input type="text" id="lname" required placeholder="your last name" />
           <label for="email">Email</label>
-          <input type="text" id="email" />
+          <input type="text" id="email" required placeholder="name@gmail.com" />
           <label for="phone">Phone Number</label>
           <input type="tel" id="phone" />
           <input type="submit" value="Join" />
