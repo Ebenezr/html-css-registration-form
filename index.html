@@ -15,8 +15,14 @@
         </div>
         <form action="Post">
           <span>Find the right boot camp for you</span>
-          <label for="interest">Select your interest</label>
-          <input type="text" id="interest" />
+          <label for="my-list">Select your interest</label>
+          <select id="my-list">
+            <option value="none">ASP.NET web core</option>
+            <option value="Web design">Web design</option>
+            <option value="Data mining">Data Mining</option>
+            <option value="Android">Android Development</option>
+          </select>
+
           <label for="fname">First name</label>
           <input
             type="text"
@@ -29,7 +35,12 @@
           <label for="email">Email</label>
           <input type="text" id="email" required placeholder="name@gmail.com" />
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" />
+          <input
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}"
+            id="phone"
+            placeholder="+254 706 731892"
+          />
           <input type="submit" value="Join" />
           <h6 class="footer">
             By continuing you agree to our Terms of Service and Privacy Policy,
