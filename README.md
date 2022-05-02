@@ -9,7 +9,7 @@ the project has been implementented using html and CSS
 ***
 
 ## Screenshot
-![image](/assets/images/)
+![image](/assets/images/FireShot%20Capture%20006%20-%20Registration%20-%20127.0.0.1.png)
 
 ## Table of content
 - [Technologies]
