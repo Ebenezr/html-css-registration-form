@@ -55,9 +55,12 @@ body{
          padding: 8px;
          display: block;
          border: none;
-         width: 90%;
+         width: 95%;
          margin: 4px;
          border-radius: 2px;
+         background-color: white;
+
+         /*disable default dropdown icon*/
          -webkit-appearance: none;
          appearance: none;
          /* for Firefox */
@@ -67,6 +70,10 @@ body{
          
 
      } 
+     select:required:invalid { 
+         color: gray; 
+    }
+
       input[type=text]{
           box-shadow: none;
       }
