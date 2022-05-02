@@ -34,7 +34,7 @@ languages used are:
 I used html in creating the page structure and css in styling the document
 *** 
 ## How to set up and run the project
-<<<<<<< HEAD
+
 #### method one
 clone the repo using the command
 - $git clone https://github.com/Ebenezr/html-css-registration-form.git
@@ -43,7 +43,7 @@ change directory using command
 
 #### method two
  - run the following live link in your browser 
-=======
+
 #### clone repo 
 * clone the repo using the command: git clone
 https://github.com/Ebenezr/landing-page.git
