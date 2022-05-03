@@ -17,7 +17,7 @@
         <form action="Post">
           <span>Find the right boot camp for you</span>
           <label for="my-list">Select your interest</label>
-          <select id="my-list" required>
+          <select id="my-list" class="input" required>
             <option value="" disabled selected hidden>Select course</option>
             <option value="Web design">Web design</option>
             <option value="Data mining">Data Mining</option>
@@ -29,18 +29,18 @@
             type="text"
             id="fname"
             required
-            placeholder="your first name"
+            placeholder="your first name" class="input"
           />
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" required placeholder="your last name" />
+          <input type="text" id="lname" required placeholder="your last name" class="input"/>
           <label for="email">Email</label>
-          <input type="text" id="email" required placeholder="name@gmail.com" />
+          <input type="text" id="email" required placeholder="name@gmail.com" class="input"/>
           <label for="phone">Phone Number</label>
           <input
             type="tel"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{6}"
             id="phone"
-            placeholder="+254 706 731892"
+            placeholder="+254 706 731892" class="input"
           />
           <input type="submit" value="Join" />
           <h6 class="footer">
