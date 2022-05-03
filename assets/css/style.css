@@ -1,134 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
-body{
-    font-family: 'Ubuntu', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+body {
+  font-family: "Ubuntu", sans-serif;
+  height: 100vh;
+  width: 100%;
+  color: white;
 }
-.container{
-    position: absolute;
-    left: 50%;
-    top: 50%;  
-    margin-top: -250px;
-    margin-left: -400px;  
-    display: flex;
-    flex-direction: row;
-    flex-wrap:no-wrap;
-    width: 800;
-    height: 500PX;
-    /*box-shadow: 0 0 0 0.25rem rgba(107, 13, 13, 0.062);
-*/
 
-
-
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
 }
-.left-side{
-     background-color: rgba(0, 0, 0, 0.253);
-     padding-top: 0px;
-     padding-left: 12px;
-     padding-right: 12px;
-     padding-bottom: 0px;
-     width: 400px;
-     height: 500px;
-     
-    
 
-    }
-    .left-side .logo{
-        display: flex;
-        justify-content: center;
+.container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("/assets/images/hubert-gontarz-funuqwGlJOY-unsplash.jpg")
+    no-repeat center;
+  background-size: cover;
+  filter: blur(30px);
+  z-index: -1;
+}
 
-    }
-    .left-side img{
-        width: 100px;     
-        
-    }
-    .left-side span{
-        font-size: 18px;
-        font-weight: 600;
-        display: block;
-        margin-bottom: 12px;
-        text-align: center;
-        color: brown;
-    }
-    .left-side label{
-        font-size: 14px;
-    }
-     input[type=text]{
-         padding: 8px;
-         display: block;
-         border: none;
-         width: 90%;
-         margin: 4px;
-         border-radius: 2px;
+.container-box {
+  max-width: 800;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.308);
+  box-shadow: 0 0 0 0.25rem rgba(107, 13, 13, 0.062);
+}
 
-     } 
-    select{
-         padding: 8px;
-         display: block;
-         border: none;
-         width: 95%;
-         margin: 4px;
-         border-radius: 2px;
-         background-color: white;
+.left-side {
+  background-color: rgba(0, 0, 0, 0.253);
+  padding-top: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 0px;
+  width: 400px;
+  height: 500px;
+}
+.left-side .logo {
+  display: flex;
+  justify-content: center;
+}
+.left-side img {
+  width: 100px;
+}
+.left-side span {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  color: brown;
+}
+.left-side label {
+  font-size: 14px;
+}
+input[type="text"] {
+  padding: 8px;
+  display: block;
+  border: none;
+  width: 90%;
+  margin: 4px;
+  border-radius: 2px;
+}
+select {
+  padding: 8px;
+  display: block;
+  border: none;
+  width: 95%;
+  margin: 4px;
+  border-radius: 2px;
+  background-color: white;
 
-         /*disable default dropdown icon*/
-         -webkit-appearance: none;
-         appearance: none;
-         /* for Firefox */
-        -moz-appearance: none;
-        /* for Chrome */
-        -webkit-appearance: none;
-         
+  /*disable default dropdown icon*/
+  -webkit-appearance: none;
+  appearance: none;
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Chrome */
+  -webkit-appearance: none;
+}
+select:required:invalid {
+  color: gray;
+}
 
-     } 
-     select:required:invalid { 
-         color: gray; 
-    }
-
-      input[type=text]{
-          box-shadow: none;
-      }
-    input[type=tel]{
-         padding: 8px;
-         display: block;
-         border: none;
-         width: 90%;
-         margin: 4px;
-         border-radius: 2px;
-         margin-bottom: 12px;
-
-     } 
-    input[type=submit]{
-         padding: 6px 36px;
-         display: block;
-         border-radius: 4px;
-         border: none;
-         background-color: brown;
-         color: white;
-         margin: 0 auto;
-
-
-     }
-     .left-side .footer{
-        margin-top: 12px; 
-        font-size: 10px;
-        text-align: center;
-        font-weight: 100;
-
-     }
-.right-side{
-    
-    width: 400px;
-    padding:0px;
-    margin: 0px;
-    height: 500px;
-
-    }
-
-    .right-side{
-        display: inline-block;
-    }
-    .right-side img{
-        width: auto; 
-        height: 100%; 
-        object-fit: contain;
-    
-    }
+input[type="text"] {
+  box-shadow: none;
+}
+input[type="tel"] {
+  padding: 8px;
+  display: block;
+  border: none;
+  width: 90%;
+  margin: 4px;
+  border-radius: 2px;
+  margin-bottom: 12px;
+}
+input[type="submit"] {
+  padding: 6px 36px;
+  display: block;
+  border-radius: 4px;
+  border: none;
+  background-color: brown;
+  color: white;
+  margin: 0 auto;
+}
+.left-side .footer {
+  margin-top: 12px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 100;
+}
+.right-side {
+  background: url("/assets/images/hubert-gontarz-funuqwGlJOY-unsplash.jpg")
+    no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
